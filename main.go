@@ -70,22 +70,23 @@ func main() {
 	// ---------------------------------------------------------------
 
 	// --------------- NGC-5 : Struct Hero -----------------
-	penyerang := map[string]int{
-		"name":           1,
-		"baseAttack":     10,
-		"defence":        10,
-		"criticalDamage": 10,
-		"healthPoint":    50,
-		"weapon":         10,
+
+	penyerang := hero.Hero{
+		Name:           1,
+		BaseAttack:     10,
+		Defence:        10,
+		CriticalDamage: 10,
+		HealthPoint:    50,
+		Weapon:         hero.Weapon{Attack: 10},
 	}
 
-	diserang := map[string]int{
-		"name":           2,
-		"baseAttack":     10,
-		"defence":        10,
-		"criticalDamage": 10,
-		"healthPoint":    50,
-		"weapon":         10,
+	diserang := hero.Hero{
+		Name:           1,
+		BaseAttack:     10,
+		Defence:        10,
+		CriticalDamage: 10,
+		HealthPoint:    50,
+		Weapon:         hero.Weapon{Attack: 10},
 	}
 
 	fmt.Println()
